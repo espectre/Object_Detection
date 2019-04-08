@@ -1,6 +1,6 @@
-##Summary of classic object detection papers.
+## Summary of classic object detection papers.
 
-###1.One-stage
+### 1.One-stage
 
 **YOLOv1——>SSD——>DSSD——>YOLOv2——>RetinaNet——>DSOD——>YOLOv3——>RefineDet——>RFBNet——>M2Det——>Consistent Optimization(11)**
 
@@ -8,11 +8,11 @@
 
 RCNN——>SppNet——>Fast RCNN——>Faster RCNN——>OHEM——>R-FCN——>FPN——>DCN——>Mask RCNN——>Soft-NMS——>Cascade R-CNN——>iounet——>TrindentNet(13)**
 
-###3.Improve RPN
+### 3.Improve RPN
 
 
 
-###4.Improve NMS
+### 4.Improve NMS
 
 
 
@@ -32,7 +32,7 @@ RCNN——>SppNet——>Fast RCNN——>Faster RCNN——>OHEM——>R-FCN——
 
 
 
-###9.BackBone
+### 9.BackBone
 
 **VGG——>ResNet——>DenseNet**
 
@@ -76,7 +76,7 @@ RCNN——>SppNet——>Fast RCNN——>Faster RCNN——>OHEM——>R-FCN——
 
 [20]**(Mask R-CNN)**K.He,G.Gkioxari,P.Dolla ́r,and R.Girshick.MaskR-CNN. In ICCV, 2017.
 
-[21] **(Soft- NMS)**N. Bodla, B. Singh, R. Chellappa, and L. S. Davis. Soft-NMS-improving object detection with one line of code. In ICCV, 2017. 
+[21]**(Soft- NMS)**N. Bodla, B. Singh, R. Chellappa, and L. S. Davis. Soft-NMS-improving object detection with one line of code. In ICCV, 2017. 
 
 [22]**(Cascade R-CNN)** Z. Cai and N. Vasconcelos. Cascade R-CNN: Delving into high quality object detection. In CVPR, 2018. 
 
