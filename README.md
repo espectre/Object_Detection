@@ -1,40 +1,116 @@
-## Summary of classic object detection papers.
+## 一、Classic detection model
 
-### 1.One-stage
+### 1.Proposal or not
+
+#### （1）One-stage
 
 **YOLOv1——>SSD——>DSSD——>YOLOv2——>RetinaNet——>DSOD——>YOLOv3——>RefineDet——>RFBNet——>M2Det——>Consistent Optimization(11)**
 
-### 2.Two-stage
+#### （2）Two-stage
 
-RCNN——>SppNet——>Fast RCNN——>Faster RCNN——>OHEM——>R-FCN——>FPN——>DCN——>Mask RCNN——>Soft-NMS——>Cascade R-CNN——>iounet——>TrindentNet(13)**
+**RCNN——>SppNet——>Fast RCNN——>Faster RCNN——>OHEM——>R-FCN——>FPN——>DCN——>Mask RCNN——>Soft-NMS——>Cascade R-CNN——>iounet——>TrindentNet(13)**
 
-### 3.Improve RPN
+#### （3）One-Two Combination
 
+### 2.Improvement of detection modules
 
+#### （1）based RPN
 
-### 4.Improve NMS
+[R-CNN for Small Object Detection]
 
+#### （2）based NMS
 
+[Soft-NMS]
 
-### 5.Improve IoU
+[Softer-NMS]
 
+[ConvNMS]
 
+[Pure NMS Network]
 
-### 6.Scale
+[Fitness NMS]
 
+#### （3）based anchor
 
+#### （4）based scale
 
-### 7.Little object
+### 3.Improvement to solve problems
 
+#### （1）small object
 
+[FPN]
 
-### 8.shelter
+[DSSD]
 
+[SNIP]
 
+[SNIPPER]
 
-### 9.BackBone
+[R-SSD](<https://arxiv.org/abs/1705.09587>)
 
-**VGG——>ResNet——>DenseNet**
+[R-CNN for Small Object Detection]
+
+[Relation Network for Object Detection]
+
+[M2Det]
+
+#### （2）shelter
+
+[Repulsion Loss]
+
+[Occlusion-aware R-CNN]
+
+[Soft-NMS]
+
+[Bi-box]
+
+[R-DAD] 
+
+#### （3）Imbalance Of Positive&Negative
+
+## 二、Classic classification/detection backbone
+
+### 1.deepen
+
+**（1）resnet**
+
+### 2.widen
+
+**（1）Inception**
+
+### 3.smaller
+
+**（1）mobilenet**
+
+**（2）shufflenet**
+
+**（3）pelee**
+
+### 4.feature 
+
+**（1）DenseNet**
+
+**（2）SeNet**
+
+### 5.detection specific
+
+**（1）darknet**
+
+## 三、Detection modules
+
+### 1.Selective Search&&RPN
+
+### 2.ROI pooling&&ROI align
+
+### 3.[IoU](<https://blog.csdn.net/weixin_41278720/article/details/88770034>)
+
+### 4.NMS
+
+### 5.[Generic metrics](<https://zhuanlan.zhihu.com/p/60218684>)
+
+### 6.[mAP](<https://zhuanlan.zhihu.com/p/60319755>)
+
+## 四、Reference
 
 [1]**(YOLOv1)** J. Redmon, S. Divvala, R. Girshick, and A. Farhadi. You only look once: Unified, real-time object detection. In CVPR, 2016.
 
