@@ -32,8 +32,6 @@
 
 #### （3）based anchor
 
-#### （4）based scale
-
 ### 3.Improvement to solve problems
 
 #### （1）small object
@@ -54,7 +52,16 @@
 
 [M2Det]
 
-#### （2）shelter
+#### （2）scale variation
+[image pyramid/multi-scale testing]
+
+[feature pyramid]
+
+[anchor box]
+
+[M2Det]
+
+#### （3）shelter
 
 [Repulsion Loss]
 
@@ -66,9 +73,9 @@
 
 [R-DAD] 
 
-#### （3）Imbalance Of Positive&Negative
+#### （4）Imbalance Of Positive&Negative
 
-#### （4）Mobile or Light weight
+#### （5）Mobile or Light weight
 
 ## 二、Classic classification/detection backbone
 
