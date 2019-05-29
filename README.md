@@ -12,13 +12,31 @@
 
 #### （3）One-Two Combination
 
+**RefineDet**
+
 ### 2.Improvement of detection modules
 
 #### （1）based RPN
 
+[MR-CNN]
+
+[FPN]
+
+[CRAFT]
+
 [R-CNN for Small Object Detection]
 
-#### （2）based NMS
+#### （2）based ROI
+
+[RFCN]
+
+[CoupleNet]
+
+[Mask R-CNN]
+
+[Cascade R-CNN]
+
+#### （3）based NMS
 
 [Soft-NMS]
 
@@ -30,7 +48,9 @@
 
 [Fitness NMS]
 
-#### （3）based anchor
+#### （4）based anchor
+
+[GA-RPN(CVPR2019)]
 
 ### 3.Improvement to solve problems
 
@@ -52,7 +72,8 @@
 
 [M2Det]
 
-#### （2）scale variation
+#### （2）scale variation/Feature fusion
+
 [image pyramid/multi-scale testing]
 
 [feature pyramid]
@@ -60,6 +81,8 @@
 [anchor box]
 
 [M2Det]
+
+[FSSD]
 
 #### （3）shelter
 
@@ -75,7 +98,20 @@
 
 #### （4）Imbalance Of Positive&Negative
 
-#### （5）Mobile or Light weight
+[OHEM(CVPR2016)]
+
+[A-Fast-RCNN(CVPR2017)]
+
+[Focal loss(ICCV2017)]
+
+[GHM(AAAI2019)]
+
+#### (5)Mobile or Light Weight
+
+[Light-Head R-CNN]
+
+[ThunderNet]
+
 
 ## 二、Classic classification/detection backbone
 
