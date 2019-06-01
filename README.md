@@ -2,21 +2,21 @@
 
 ### 1.Proposal or not
 
-#### （1）One-stage
+#### 1.1 One-stage
 
 **YOLOv1——>SSD——>DSSD——>YOLOv2——>RetinaNet——>DSOD——>YOLOv3——>RefineDet——>RFBNet——>M2Det——>Consistent Optimization(11)**
 
-#### （2）Two-stage
+#### 1.2 Two-stage
 
 **RCNN——>SppNet——>Fast RCNN——>Faster RCNN——>OHEM——>R-FCN——>FPN——>DCN——>Mask RCNN——>Soft-NMS——>Cascade R-CNN——>iounet——>TrindentNet(13)**
 
-#### （3）One-Two Combination
+#### 1.3 One-Two Combination
 
 **RefineDet**
 
 ### 2.Improvement of detection modules
 
-#### （1）based RPN
+#### 2.1 based RPN
 
 [MR-CNN]
 
@@ -26,7 +26,7 @@
 
 [R-CNN for Small Object Detection]
 
-#### （2）based ROI
+#### 2.2 based ROI
 
 [RFCN]
 
@@ -36,7 +36,7 @@
 
 [Cascade R-CNN]
 
-#### （3）based NMS
+#### 2.3 based NMS
 
 [Soft-NMS]
 
@@ -48,31 +48,50 @@
 
 [Fitness NMS]
 
-#### （4）based anchor
+#### 2.4 based anchor
 
 [GA-RPN(CVPR2019)]
 
 ### 3.Improvement to solve problems
 
-#### （1）small object
+#### 3.1 small object
 
-[FPN]
+[此处相当一部分内容来源于知乎@尼箍纳斯凯奇的回答](https://www.zhihu.com/question/272322209/answer/482922713)
 
-[DSSD]
+1. data-augmentation。简单粗暴有效，正确的做sampling可以很大提升模型在小物体检测上的性能。这里面其实trick也蛮多的，可以参考pyramidbox里面的data-anchor-sampling。
 
-[SNIP]
+2. 特征融合方法。最简单粗暴有效的方法，但是速度上影响较大。
 
-[SNIPPER]
+FPN，DSSD、[R-SSD](<https://arxiv.org/abs/1705.09587>)、[M2Det]等
 
-[R-SSD](<https://arxiv.org/abs/1705.09587>)
+3. 在主干网络的low level（stride较小部分）出feature map，对应的anchor size可以设置较大。
+
+4. 利用context信息，建立小物体与context的关系。或者上dilated类似混合感知野，或者在head部分引入SSH相似的模块。
 
 [R-CNN for Small Object Detection]
 
+5. 小物体检测如何把bbox做的更准，
+
+iou loss、cascade rcnn
+
+6. 参考CVPR论文SNIP/SNIPER
+
+7. 在anchor层面去设计
+
+anchor densitification（出自faceboxes论文），
+
+anchor matching strategy（出自SFD论文）。
+
+8. 建模物体间关系，relation network等思路。
+
 [Relation Network for Object Detection]
 
-[M2Det]
+9. 上GAN啊，在检测器后面对抗一把。
 
-#### （2）scale variation/Feature fusion
+10. 用soft attention去约束confidence相关的feature map，或者做一些pixel wise的attention。
+
+
+#### 3.2 scale variation/Feature fusion
 
 [image pyramid/multi-scale testing]
 
@@ -84,7 +103,7 @@
 
 [FSSD]
 
-#### （3）shelter
+#### 3.3 shelter
 
 [Repulsion Loss]
 
@@ -96,7 +115,7 @@
 
 [R-DAD] 
 
-#### （4）Imbalance Of Positive&Negative
+#### 3.4 Imbalance Of Positive&Negative
 
 [OHEM(CVPR2016)]
 
@@ -106,7 +125,7 @@
 
 [GHM(AAAI2019)]
 
-#### (5)Mobile or Light Weight
+#### 3.5 Mobile or Light Weight
 
 [Light-Head R-CNN]
 
